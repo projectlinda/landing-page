@@ -2,9 +2,15 @@ import styled from 'styled-components';
 import { basePath, spacing } from '../constants';
 
 const AboutPageStyled = styled.section`
-    background-color: ${({theme}) => theme.lightGrey};
+    background-color: ${({ theme }) => theme.lightGrey};
+`;
+
+const AboutPageContainerStyled = styled.section`    
     display: flex;
     flex-direction: column;
+    margin: auto;
+    max-width: 1400px;
+
     padding: ${spacing(3)}; 
 
     @media only screen and (min-device-width: 768px) {
@@ -43,14 +49,16 @@ const DescStyled = styled.div`
 
 export default function AboutPage() {
     return (
-        <AboutPageStyled>
-            <AboutImageStyled src={`${basePath}/images/about-image.svg`}></AboutImageStyled>
-            <LeftContent>
-                <TitleStyled>Our Mission</TitleStyled>
-                <DescStyled>With our skills and expertise, we provide emphasis on quality, reliability and convenience to build confidence and long lasting relationship with our partners.</DescStyled>
-                <TitleStyled>Our Vision</TitleStyled>
-                <DescStyled>To provide the knowledge in applying technology  to create, improve and establish business opportunities to communities locally and globally in food services.</DescStyled>
-            </LeftContent>            
+        <AboutPageStyled id="about">
+            <AboutPageContainerStyled>
+                <AboutImageStyled src={`${basePath}/images/about-image.svg`}></AboutImageStyled>
+                <LeftContent>
+                    <TitleStyled>Our Mission</TitleStyled>
+                    <DescStyled>With our skills and expertise, we provide emphasis on quality, reliability and convenience to build confidence and long lasting relationship with our partners.</DescStyled>
+                    <TitleStyled>Our Vision</TitleStyled>
+                    <DescStyled>To provide the knowledge in applying technology  to create, improve and establish business opportunities to communities locally and globally in food services.</DescStyled>
+                </LeftContent>
+            </AboutPageContainerStyled>
         </AboutPageStyled>
     )
 }

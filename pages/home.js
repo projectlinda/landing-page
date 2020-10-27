@@ -4,6 +4,9 @@ import { basePath, spacing } from '../constants';
 const HomePageStyled = styled.section`
     display: flex;
     flex-direction: column;
+    margin: auto;
+    max-width: 1400px;    
+
     padding: ${spacing(3)}; 
     
     @media only screen and (min-device-width: 768px) {
@@ -66,7 +69,7 @@ const GooglePlayStyled = styled.img`
 
 export default function HomePage() {
     return (
-        <HomePageStyled>
+        <HomePageStyled id="home">
             <MokcupImageStyled src={`${basePath}/images/mockup.png`}></MokcupImageStyled>
             <LeftContent>
                 <LogoStyled src={`${basePath}/images/logo.svg`}></LogoStyled>

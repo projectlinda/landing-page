@@ -44,12 +44,23 @@ const links = [
 export default function Navbar() {
 
   const [route, setRoute] = useState('home')
+
+  const onNavClick = (route) => {
+    
+    const yOffset = -10; 
+    const element = document.getElementById(route)
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset
+    
+    window.scrollTo({top: y, behavior: 'smooth'})
+
+    setRoute(route)
+  }
   
   return (
     <NavBarStyled>
       <img src={`${basePath}/images/icon.svg`} />
       <NavBarItemsStyled>
-        {links.map((m) => <NavBarItemStyled key={m.route} active={route === m.route} onClick={() => setRoute(m.route)}>{m.name}</NavBarItemStyled>)}
+        {links.map((m) => <NavBarItemStyled key={m.route} active={route === m.route} onClick={() => onNavClick(m.route)}>{m.name}</NavBarItemStyled>)}
       </NavBarItemsStyled>
     </NavBarStyled>
   )
