@@ -10,12 +10,21 @@ const NavBarStyled = styled.nav`
   font-weight: 200;
 
   padding: ${spacing(3)} ${spacing(1.5)};
+
+  @media only screen and (min-device-width: 768px) {
+    flex-direction: row;
+  }
+
 `
 
 const NavBarItemsStyled = styled.div`  
   display: flex;
 
   margin-top: ${spacing(1)};
+
+  @media only screen and (min-device-width: 768px) {
+    margin-left: auto;
+  }
 `
 
 const NavBarItemStyled = styled.a`    

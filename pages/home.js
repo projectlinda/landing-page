@@ -1,9 +1,32 @@
 import styled from 'styled-components';
 import { basePath, spacing } from '../constants';
 
+const HomePageStyled = styled.section`
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-device-width: 768px) {
+        align-items: center;
+        flex-direction: row;
+        flex-flow: row-reverse;
+    }
+`;
+
 const MokcupImageStyled = styled.img`
     width: 100%;
     padding: 0 ${spacing(2)};
+
+    @media only screen and (min-device-width: 768px) {
+        width: 50%;
+    }
+
+    @media only screen and (min-device-width: 1024px) {
+        width: 70%;
+    }
+
+    @media only screen and (min-device-width: 1440px) {
+        width: 80%;
+    }
 `;
 
 const LeftContent = styled.section`
@@ -39,7 +62,7 @@ const GooglePlayStyled = styled.img`
 
 export default function HomePage() {
     return (
-        <section>
+        <HomePageStyled>
             <MokcupImageStyled src={`${basePath}/images/mockup.png`}></MokcupImageStyled>
             <LeftContent>
                 <LogoStyled src={`${basePath}/images/logo.svg`}></LogoStyled>
@@ -47,6 +70,6 @@ export default function HomePage() {
                 <DescStyled>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</DescStyled>
                 <GooglePlayStyled src={`${basePath}/images/google-play.png`}></GooglePlayStyled>
             </LeftContent>            
-        </section>
+        </HomePageStyled>
     )
 }

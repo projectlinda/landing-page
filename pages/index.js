@@ -1,15 +1,19 @@
 
-import Head from 'next/head';
-import { ThemeProvider } from 'styled-components';
-import Navbar from '../components/navbar';
-import { theme } from '../constants';
-import HomePage from './home';
+import Head from 'next/head'
+import styled, { ThemeProvider } from 'styled-components'
+import Navbar from '../components/navbar'
+import { theme } from '../constants'
+import HomePage from './home'
 
+const AppStyled = styled.div`
+  max-width: 1400px;
+  margin: auto;
+`;
 
 export default function Home() {
   return (
     <ThemeProvider theme={theme}>
-      <div>
+      <AppStyled>
         <Head>          
           <title>Carinderya</title>
           <link rel="icon" href="/favicon.ico" />
@@ -20,7 +24,7 @@ export default function Home() {
           <HomePage></HomePage>
         </main>
 
-      </div>
+      </AppStyled>
     </ThemeProvider>
   )
 }
