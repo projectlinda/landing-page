@@ -6,12 +6,15 @@ const AboutPageStyled = styled.section`
 `;
 
 const AboutPageContainerStyled = styled.section`    
+    align-items: center;
     display: flex;
     flex-direction: column;    
     margin: auto;
+    height: 80vh;
+    justify-content: center;
     max-width: 1400px;
 
-    padding: ${spacing(8)} ${spacing(3)};
+    padding: ${spacing(3)};
 
     @media only screen and (min-device-width: 1024px) {
         align-items: center;
@@ -21,14 +24,31 @@ const AboutPageContainerStyled = styled.section`
 `;
 
 const AboutImageStyled = styled.img`        
+    width: 100%;  
+    max-width: 550px;        
     padding: 0 ${spacing(2)};    
+
+    @media only screen and (min-device-width: 1024px) {
+        max-width: 450px;
+    }  
+
+    @media only screen and (min-device-width: 1440px) {
+        max-width: 650px;
+    }
 `;
 
-const LeftContent = styled.section`        
+const LeftContent = styled.section`       
+    align-items: center;
+    display: flex;
+    flex-direction: column;   
     max-width: 650px;
-
+    
     margin-top: ${spacing(3)}; 
     padding: 0 ${spacing(3)};
+
+    @media only screen and (min-device-width: 1024px) {
+        display: block;   
+    }
 `;
 
 const TitleStyled = styled.div`    

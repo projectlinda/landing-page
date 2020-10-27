@@ -4,6 +4,7 @@ import styled, { ThemeProvider } from 'styled-components'
 import Navbar from '../components/navbar'
 import { spacing, theme } from '../constants'
 import AboutPage from './about'
+import ContactPage from './contact'
 import HomePage from './home'
 
 const AppStyled = styled.div`  
@@ -11,6 +12,19 @@ const AppStyled = styled.div`
   max-width: 1400px; 
   
   padding: 0 ${spacing(3)}; 
+`;
+
+const FooterStyled = styled.footer`  
+  margin: auto;
+  max-width: 1400px; 
+  text-align: center;
+  
+  margin-top: ${spacing(5)}; 
+  padding: ${spacing(3)}; 
+
+  @media only screen and (min-device-width: 1024px) {
+    text-align: left;
+  }
 `;
 
 export default function Home() {
@@ -28,8 +42,12 @@ export default function Home() {
           </AppStyled>
           <HomePage />
           <AboutPage />
+          <ContactPage />
         </main>
 
+        <FooterStyled>
+          Copyright © 2020 | Project Linda Inc. All Rights Reserved
+        </FooterStyled>
       </div>
     </ThemeProvider>
   )

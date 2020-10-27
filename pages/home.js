@@ -3,11 +3,13 @@ import { basePath, spacing } from '../constants';
 
 const HomePageStyled = styled.section`
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
+    height: 80vh;
+    justify-content: center;
     margin: auto;
     max-width: 1400px;    
-
-    padding: ${spacing(8)} ${spacing(3)}; 
+    
+    padding: ${spacing(3)}; 
     
     @media only screen and (min-device-width: 768px) {
         align-items: center;
