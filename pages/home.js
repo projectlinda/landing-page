@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { spacing } from '../constants';
+import { basePath, spacing } from '../constants';
 
 const MokcupImageStyled = styled.img`
     width: 100%;
@@ -40,12 +40,12 @@ const GooglePlayStyled = styled.img`
 export default function HomePage() {
     return (
         <section>
-            <MokcupImageStyled src="/images/mockup.png"></MokcupImageStyled>
+            <MokcupImageStyled src={`${basePath}/images/mockup.png`}></MokcupImageStyled>
             <LeftContent>
-                <LogoStyled src="/images/logo.svg"></LogoStyled>
+                <LogoStyled src={`${basePath}/images/logo.svg`}></LogoStyled>
                 <SloganStyled>Good Food Begins at Home</SloganStyled>
                 <DescStyled>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</DescStyled>
-                <GooglePlayStyled src="/images/google-play.png"></GooglePlayStyled>
+                <GooglePlayStyled src={`${basePath}/images/google-play.png`}></GooglePlayStyled>
             </LeftContent>            
         </section>
     )
