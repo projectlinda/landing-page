@@ -4,7 +4,8 @@ import { basePath, spacing } from '../constants';
 const HomePageStyled = styled.section`
     display: flex;
     flex-direction: column;
-
+    padding: ${spacing(3)}; 
+    
     @media only screen and (min-device-width: 768px) {
         align-items: center;
         flex-direction: row;
@@ -27,7 +28,7 @@ const MokcupImageStyled = styled.img`
 `;
 
 const LeftContent = styled.section`
-    max-width: 450px;
+    max-width: 500px;
     
     margin-top: ${spacing(3)}; 
     padding: 0 ${spacing(3)};
@@ -43,7 +44,7 @@ const LogoStyled = styled.img`
 
 const SloganStyled = styled.label`
     display: block;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: medium;
     text-transform: uppercase;
 
@@ -51,6 +52,7 @@ const SloganStyled = styled.label`
 `;
 
 const DescStyled = styled.div`    
+    font-size: 1.5rem;
     font-weight: 200;
     text-align: justify;
 

@@ -3,6 +3,7 @@ import Head from 'next/head'
 import styled, { ThemeProvider } from 'styled-components'
 import Navbar from '../components/navbar'
 import { theme } from '../constants'
+import AboutPage from './about'
 import HomePage from './home'
 
 const AppStyled = styled.div`
@@ -20,8 +21,9 @@ export default function Home() {
         </Head>
 
         <main>
-          <Navbar></Navbar>
-          <HomePage></HomePage>
+          <Navbar />
+          <HomePage />
+          <AboutPage />
         </main>
 
       </AppStyled>
