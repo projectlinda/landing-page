@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { spacing } from '../constants'
+import { basePath, spacing } from '../constants'
 
 const NavBarStyled = styled.nav`  
   align-items: center;
@@ -38,7 +38,7 @@ export default function Navbar() {
   
   return (
     <NavBarStyled>
-      <img src="/images/icon.svg" />
+      <img src={`${basePath}/images/icon.svg`} />
       <NavBarItemsStyled>
         {links.map((m) => <NavBarItemStyled key={m.route} active={route === m.route} onClick={() => setRoute(m.route)}>{m.name}</NavBarItemStyled>)}
       </NavBarItemsStyled>
