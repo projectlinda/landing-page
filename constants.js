@@ -1,4 +1,4 @@
-export const basePath = '/landing-page';
+export const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export const theme = {
     primaryColor: '#ED5755',
