@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React, { useState } from 'react'
+import styled from 'styled-components'
+import { spacing } from '../constants'
 
 const NavBarStyled = styled.nav`  
   align-items: center;
@@ -8,21 +9,21 @@ const NavBarStyled = styled.nav`
   font-family: SFProRounded;
   font-weight: 200;
 
-  padding: ${props => `${props.theme.spacingUnit(3)} ${props.theme.spacingUnit(1.5)}`};
+  padding: ${spacing(3)} ${spacing(1.5)};
 `
 
 const NavBarItemsStyled = styled.div`  
   display: flex;
 
-  margin-top: ${props => props.theme.spacingUnit(1)};
+  margin-top: ${spacing(1)};
 `
 
 const NavBarItemStyled = styled.a`    
   background-color: ${props => props.active ? props.theme.primaryColor : 'white'};
-  border-radius: ${props => props.theme.spacingUnit(3)};
+  border-radius: ${spacing(3)};
   color: ${props => props.active ? 'white' : props.theme.primaryTextColor};
-  padding: ${props => `${props.theme.spacingUnit(0.5)} ${props.theme.spacingUnit(1)}`};
-  margin: ${props => props.active ? `0 ${props.theme.spacingUnit(1)}` : 0};
+  padding: ${spacing(0.5)} ${spacing(1)};
+  margin: ${props => props.active ? `0 ${spacing(1)}` : 0};
 `
 
 const links = [

@@ -1,13 +1,14 @@
 import styled from 'styled-components';
+import { spacing } from '../constants';
 
 const MokcupImageStyled = styled.img`
     width: 100%;
-    padding: 0 ${props => props.theme.spacingUnit(2)};
+    padding: 0 ${spacing(2)};
 `;
 
 const LeftContent = styled.section`
-    margin-top: ${props => props.theme.spacingUnit(3)}; 
-    padding: 0 ${props => props.theme.spacingUnit(3)};
+    margin-top: ${spacing(3)}; 
+    padding: 0 ${spacing(3)};
 `;
 
 const LogoStyled = styled.img`        
@@ -20,7 +21,7 @@ const SloganStyled = styled.label`
     font-weight: medium;
     text-transform: uppercase;
 
-    margin-top: ${props => props.theme.spacingUnit(1)}; 
+    margin-top: ${spacing(1)}; 
 `;
 
 const DescStyled = styled.div`
@@ -28,11 +29,11 @@ const DescStyled = styled.div`
     font-weight: 200;
     text-align: justify;
 
-    margin-top: ${props => props.theme.spacingUnit(3)}; 
+    margin-top: ${spacing(3)}; 
 `;
 
 const GooglePlayStyled = styled.img`        
-    margin-top: ${props => props.theme.spacingUnit(5)}; 
+    margin-top: ${spacing(5)}; 
 `;
 
 
