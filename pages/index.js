@@ -15,6 +15,7 @@ const AppStyled = styled.div`
 `;
 
 const FooterStyled = styled.footer`  
+  font-size: 1.2rem;
   margin: auto;
   max-width: 1400px; 
   text-align: center;

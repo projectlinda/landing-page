@@ -57,7 +57,7 @@ const SloganStyled = styled.label`
 `;
 
 const DescStyled = styled.div`    
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 200;
     text-align: justify;
 

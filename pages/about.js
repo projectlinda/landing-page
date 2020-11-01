@@ -52,7 +52,7 @@ const LeftContent = styled.section`
 `;
 
 const TitleStyled = styled.div`    
-    font-size: 3.8rem;
+    font-size: 3.4rem;
     font-weight: bold;        
 `;
 
@@ -61,7 +61,7 @@ const Spacer = styled.div`
 `;
 
 const DescStyled = styled.div`    
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 200;
     text-align: justify;
 
