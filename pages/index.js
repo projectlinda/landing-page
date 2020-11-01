@@ -11,7 +11,7 @@ const AppStyled = styled.div`
   margin: auto;
   max-width: 1400px; 
   
-  padding: 0 ${spacing(3)}; 
+  padding: 0 ${spacing(2)}; 
 `;
 
 const FooterStyled = styled.footer`  

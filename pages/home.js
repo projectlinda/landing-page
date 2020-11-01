@@ -10,7 +10,7 @@ const HomePageStyled = styled.section`
     margin: auto;
     max-width: 1400px;    
     
-    padding: ${spacing(3)}; 
+    padding: ${spacing(2)}; 
     
     @media only screen and (min-device-width: 768px) {
         align-items: center;

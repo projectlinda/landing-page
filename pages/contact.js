@@ -9,7 +9,7 @@ const ContactPageStyled = styled.section`
     justify-content: center;
     max-width: 1400px;
 
-    padding: ${spacing(3)};
+    padding: ${spacing(2)};
 
     @media only screen and (min-device-width: 1024px) {
         align-items: center;
