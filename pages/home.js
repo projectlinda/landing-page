@@ -50,7 +50,7 @@ const LogoStyled = styled.img`
 
 const SloganStyled = styled.label`
     display: block;
-    font-size: 2rem;
+    font-size: 2vh;
     font-weight: medium;
     text-transform: uppercase;
 
@@ -58,7 +58,7 @@ const SloganStyled = styled.label`
 `;
 
 const DescStyled = styled.div`    
-    font-size: 1.6rem;
+    font-size: 1.6vh;
     font-weight: 200;
     text-align: justify;
 

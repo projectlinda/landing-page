@@ -48,12 +48,12 @@ const LeftContent = styled.section`
 `;
 
 const TitleStyled = styled.div`    
-    font-size: 3.4rem;
+    font-size: 3.4vh;
     font-weight: bold;        
 `;
 
 const DescStyled = styled.div`    
-    font-size: 1.6rem;
+    font-size: 1.6vh;
     font-weight: 200;
     text-align: justify;
 
@@ -64,7 +64,7 @@ const Button = styled.button`
     color: white;
     text-decoration: none;
     border: none;
-    font-size: 1.6rem;
+    font-size: 1.6vh;
 
     background-color: ${props => props.theme.primaryColor};
     border-radius: ${spacing(3)};    
