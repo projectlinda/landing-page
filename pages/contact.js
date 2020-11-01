@@ -82,7 +82,7 @@ export default function ContactPage() {
         <ContactPageStyled id="contact">
             <ContactImageStyled src={`${basePath}/images/chat.svg`}></ContactImageStyled>
             <LeftContent>
-                <TitleStyled>Let's connect!</TitleStyled>
+                <TitleStyled>Join the community!</TitleStyled>
                 <DescStyled>You can chat with us on our official facebook group</DescStyled>         
                 <Button onClick={() => onNavigate()}>Visit our page</Button>       
             </LeftContent>
