@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { basePath, spacing } from '../constants';
 
 const HomePageStyled = styled.section`
+    align-items: center;
     display: flex;
     flex-direction: column;    
     height: 80vh;
@@ -20,7 +21,7 @@ const HomePageStyled = styled.section`
 `;
 
 const MokcupImageStyled = styled.img`
-    width: 100%;
+    width: 80%;
     padding: 0 ${spacing(2)};
 
     @media only screen and (min-device-width: 768px) {
