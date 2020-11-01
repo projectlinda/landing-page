@@ -4,8 +4,7 @@ import { basePath, spacing } from '../constants';
 const HomePageStyled = styled.section`
     align-items: center;
     display: flex;
-    flex-direction: column;    
-    height: 80vh;
+    flex-direction: column;        
     justify-content: center;
     margin: auto;
     max-width: 1400px;    

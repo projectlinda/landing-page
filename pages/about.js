@@ -9,8 +9,7 @@ const AboutPageContainerStyled = styled.section`
     align-items: center;
     display: flex;
     flex-direction: column;    
-    margin: auto;
-    height: 80vh;
+    margin: auto;    
     justify-content: center;
     max-width: 1400px;
 
