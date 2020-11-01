@@ -7,4 +7,4 @@ export const theme = {
     secondaryTextColor: "white",
 }
 
-export const spacing = val => `${val * 10}px`
+export const spacing = val => `${val}vh`
