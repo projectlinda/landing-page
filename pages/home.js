@@ -76,7 +76,7 @@ export default function HomePage() {
             <LeftContent>
                 <LogoStyled src={`${basePath}/images/logo.svg`}></LogoStyled>
                 <SloganStyled>Good Food Begins at Home</SloganStyled>
-                <DescStyled>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</DescStyled>
+                <DescStyled>Start your first online restaurant with us or browse through a wide selection food specialties from your neighborhood!</DescStyled>
                 <GooglePlayStyled src={`${basePath}/images/google-play.png`}></GooglePlayStyled>
             </LeftContent>            
         </HomePageStyled>
