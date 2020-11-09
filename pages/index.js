@@ -1,5 +1,6 @@
 
 import Head from 'next/head'
+import Link from 'next/link'
 import styled, { ThemeProvider } from 'styled-components'
 import Navbar from '../components/navbar'
 import { spacing, theme } from '../constants'
@@ -12,21 +13,29 @@ const AppStyled = styled.div`
   max-width: 1400px; 
   
   padding: 0 ${spacing(2)}; 
-`;
+`
 
 const FooterStyled = styled.footer`  
+  display: flex;
   font-size: 1vh;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: auto;
-  max-width: 1400px; 
+  max-width: 1400px;   
   text-align: center;
   
   margin-top: ${spacing(5)}; 
   padding: ${spacing(3)}; 
 
-  @media only screen and (min-device-width: 1024px) {
-    text-align: left;
+  & > * {
+    margin-top: ${spacing(1)}; 
   }
-`;
+
+  @media only screen and (min-device-width: 1024px) {
+    justify-content: space-between;
+    text-align: left;    
+  }
+`
 
 export default function Home() {
   return (
@@ -48,7 +57,10 @@ export default function Home() {
         </main>
 
         <FooterStyled>
-          Copyright © 2020 | Project Linda Inc. All Rights Reserved
+          <span>Copyright © 2020 | Project Linda Inc. All Rights Reserved</span>
+          <Link href="/agreement">
+              Terms and Conditions
+          </Link>  
         </FooterStyled>
       </div>
     </ThemeProvider>

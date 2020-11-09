@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { basePath, spacing } from '../constants';
+import styled from 'styled-components'
+import { basePath, spacing } from '../constants'
 
 const HomePageStyled = styled.section`
     align-items: center;
@@ -17,7 +17,7 @@ const HomePageStyled = styled.section`
         flex-flow: row-reverse;
         justify-content: space-between;
     }
-`;
+`
 
 const MokcupImageStyled = styled.img`
     width: 80%;
@@ -30,14 +30,14 @@ const MokcupImageStyled = styled.img`
     @media only screen and (min-device-width: 1024px) {
         max-width: 600px;
     }
-`;
+`
 
 const LeftContent = styled.section`
     max-width: 500px;
     
     margin-top: ${spacing(3)}; 
     padding: 0 ${spacing(3)};
-`;
+`
 
 const LogoStyled = styled.img`        
     width: 250px;
@@ -45,7 +45,7 @@ const LogoStyled = styled.img`
     @media only screen and (min-device-width: 1024px) {
         width: 300px;
     }
-`;
+`
 
 const SloganStyled = styled.label`
     display: block;
@@ -54,7 +54,7 @@ const SloganStyled = styled.label`
     text-transform: uppercase;
 
     margin-top: ${spacing(1)}; 
-`;
+`
 
 const DescStyled = styled.div`    
     font-size: 1.6vh;
@@ -62,11 +62,11 @@ const DescStyled = styled.div`
     text-align: justify;
 
     margin-top: ${spacing(3)}; 
-`;
+`
 
 const GooglePlayStyled = styled.img`        
     margin-top: ${spacing(5)}; 
-`;
+`
 
 
 export default function HomePage() {

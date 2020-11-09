@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { basePath, spacing } from '../constants';
+import styled from 'styled-components'
+import { basePath, spacing } from '../constants'
 
 const ContactPageStyled = styled.section`
     align-items: center;
@@ -17,7 +17,7 @@ const ContactPageStyled = styled.section`
         flex-flow: row-reverse;
         justify-content: space-between;
     }
-`;
+`
 
 const ContactImageStyled = styled.img`  
     width: 100%;  
@@ -31,7 +31,7 @@ const ContactImageStyled = styled.img`
     @media only screen and (min-device-width: 1440px) {
         max-width: 650px;
     }
-`;
+`
 
 const LeftContent = styled.section`        
     align-items: center;
@@ -45,12 +45,12 @@ const LeftContent = styled.section`
     @media only screen and (min-device-width: 1024px) {
         display: block;   
     }
-`;
+`
 
 const TitleStyled = styled.div`    
     font-size: 3.4vh;
     font-weight: bold;        
-`;
+`
 
 const DescStyled = styled.div`    
     font-size: 1.6vh;
@@ -58,7 +58,7 @@ const DescStyled = styled.div`
     text-align: justify;
 
     padding: ${spacing(3)} 0; 
-`;
+`
 
 const Button = styled.button`
     color: white;
@@ -69,7 +69,7 @@ const Button = styled.button`
     background-color: ${props => props.theme.primaryColor};
     border-radius: ${spacing(3)};    
     padding: ${spacing(1.5)} ${spacing(3)};    
-`;
+`
 
 
 export default function ContactPage() {

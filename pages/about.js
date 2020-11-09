@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-import { basePath, spacing } from '../constants';
+import styled from 'styled-components'
+import { basePath, spacing } from '../constants'
 
 const AboutPageStyled = styled.section`
     background-color: ${({ theme }) => theme.lightGrey};
-`;
+`
 
 const AboutPageContainerStyled = styled.section`    
     align-items: center;
@@ -20,7 +20,7 @@ const AboutPageContainerStyled = styled.section`
         flex-direction: row;        
         justify-content: space-between;
     }
-`;
+`
 
 const AboutImageStyled = styled.img`        
     width: 100%;  
@@ -34,7 +34,7 @@ const AboutImageStyled = styled.img`
     @media only screen and (min-device-width: 1440px) {
         max-width: 650px;
     }
-`;
+`
 
 const LeftContent = styled.section`       
     align-items: center;
@@ -48,16 +48,16 @@ const LeftContent = styled.section`
     @media only screen and (min-device-width: 1024px) {
         display: block;   
     }
-`;
+`
 
 const TitleStyled = styled.div`    
     font-size: 3.4vh;
     font-weight: bold;        
-`;
+`
 
 const Spacer = styled.div`
     margin-top: ${spacing(5)}; 
-`;
+`
 
 const DescStyled = styled.div`    
     font-size: 1.6vh;
@@ -65,7 +65,7 @@ const DescStyled = styled.div`
     text-align: justify;
 
     padding: ${spacing(3)} 0; 
-`;
+`
 
 
 export default function AboutPage() {
