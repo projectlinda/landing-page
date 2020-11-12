@@ -62,19 +62,27 @@ const DescStyled = styled.div`
 
 const Button = styled.button`
     color: white;
+    cursor: pointer;
     text-decoration: none;
     border: none;
     font-size: 1.6vh;
+    outline: none;    
 
     background-color: ${props => props.theme.primaryColor};
     border-radius: ${spacing(3)};    
+    margin: ${spacing(1)};
     padding: ${spacing(1.5)} ${spacing(3)};    
+    
 `
 
 
 export default function ContactPage() {
 
-    const onNavigate = () => {
+    const onNavigateViber = () => {
+        window.open('https://bit.ly/carinderyaviber', '_blank')        
+    }
+
+    const onNavigateFB = () => {
         window.open('https://www.facebook.com/CarinderyaOfficialFB', '_blank')
     }
 
@@ -83,8 +91,9 @@ export default function ContactPage() {
             <ContactImageStyled src={`${basePath}/images/chat.svg`}></ContactImageStyled>
             <LeftContent>
                 <TitleStyled>Join the community!</TitleStyled>
-                <DescStyled>You can chat with us on our official facebook group</DescStyled>         
-                <Button onClick={() => onNavigate()}>Visit our page</Button>       
+                <DescStyled>You can chat with us on our official facebook and viber group</DescStyled>         
+                <Button onClick={() => onNavigateViber()}>Be a seller</Button>       
+                <Button onClick={() => onNavigateFB()}>Visit our page</Button>       
             </LeftContent>
         </ContactPageStyled>
     )

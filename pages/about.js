@@ -2,84 +2,95 @@ import styled from 'styled-components'
 import { basePath, spacing } from '../constants'
 
 const AboutPageStyled = styled.section`
-    background-color: ${({ theme }) => theme.lightGrey};
+    background-color: ${({ theme }) => theme.lightGrey};    
 `
 
-const AboutPageContainerStyled = styled.section`    
-    align-items: center;
-    display: flex;
-    flex-direction: column;    
-    margin: auto;    
-    justify-content: center;
+const AboutPageContainerStyled = styled.section`
+    margin: auto;
     max-width: 1400px;
-
-    padding: ${spacing(2)};
-
-    @media only screen and (min-device-width: 1024px) {
-        align-items: center;
-        flex-direction: row;        
-        justify-content: space-between;
-    }
-`
-
-const AboutImageStyled = styled.img`        
-    width: 100%;  
-    max-width: 550px;        
-    padding: 0 ${spacing(2)};    
-
-    @media only screen and (min-device-width: 1024px) {
-        max-width: 450px;
-    }  
-
-    @media only screen and (min-device-width: 1440px) {
-        max-width: 650px;
-    }
-`
-
-const LeftContent = styled.section`       
-    align-items: center;
-    display: flex;
-    flex-direction: column;   
-    max-width: 650px;
     
-    margin-top: ${spacing(3)}; 
-    padding: 0 ${spacing(3)};
-
-    @media only screen and (min-device-width: 1024px) {
-        display: block;   
-    }
+    padding: ${spacing(3)};
 `
-
 const TitleStyled = styled.div`    
     font-size: 3.4vh;
-    font-weight: bold;        
+    font-weight: bold;     
+    text-align: center;
+    
+    padding: ${spacing(3)};
+    padding-bottom: 0px;   
 `
 
-const Spacer = styled.div`
-    margin-top: ${spacing(5)}; 
+const ItemListStyled = styled.section`        
+    align-items: start;
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: ${spacing(3)} ${spacing(2)};
 `
 
-const DescStyled = styled.div`    
-    font-size: 1.6vh;
-    font-weight: 200;
-    text-align: justify;
+const ItemStyled = styled.div`    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 12vh;
 
-    padding: ${spacing(3)} 0; 
+    margin: ${spacing(1)};
 `
 
+const ItemImageStyled = styled.img`    
+    height: 8vh;
+    width: 8vh;
+`
 
 export default function AboutPage() {
     return (
         <AboutPageStyled id="about">
             <AboutPageContainerStyled>
-                <AboutImageStyled src={`${basePath}/images/about-image.svg`}></AboutImageStyled>
-                <LeftContent>
-                    <TitleStyled>Our Mission</TitleStyled>
-                    <DescStyled>With our skills and expertise, we provide emphasis on quality, reliability and convenience to build confidence and long lasting relationship with our partners.</DescStyled>
-                    <Spacer />
-                    <TitleStyled>Our Vision</TitleStyled>
-                    <DescStyled>To provide the knowledge in applying technology  to create, improve and establish business opportunities to communities locally and globally in food services.</DescStyled>
-                </LeftContent>
+                <TitleStyled>W/O Carinderya</TitleStyled>
+                <ItemListStyled>
+                    <ItemStyled>
+                        <ItemImageStyled src={`${basePath}/images/high_capital.png`}></ItemImageStyled>
+                        <div>High Capital</div>
+                    </ItemStyled>
+                    <ItemStyled>
+                        <ItemImageStyled src={`${basePath}/images/no_marketplace.png`}></ItemImageStyled>
+                        <div>No designated market place</div>
+                    </ItemStyled>
+                    <ItemStyled>
+                        <ItemImageStyled src={`${basePath}/images/limited_hours.png`}></ItemImageStyled>
+                        <div>Limited Hours of Operation</div>
+                    </ItemStyled>
+                    <ItemStyled>
+                        <ItemImageStyled src={`${basePath}/images/expensive.png`}></ItemImageStyled>
+                        <div>Expensive</div>
+                    </ItemStyled>
+                </ItemListStyled>
+                <TitleStyled>With Carinderya</TitleStyled>
+                <ItemListStyled>
+                    <ItemStyled>
+                        <ItemImageStyled src={`${basePath}/images/zero_startup.png`}></ItemImageStyled>
+                        <div>Zero Startup Fees</div>
+                    </ItemStyled>
+                    <ItemStyled>
+                        <ItemImageStyled src={`${basePath}/images/marketplace.png`}></ItemImageStyled>
+                        <div>1st Marketplace App for Food</div>
+                    </ItemStyled>
+                    <ItemStyled>
+                        <ItemImageStyled src={`${basePath}/images/open_always.png`}></ItemImageStyled>
+                        <div>24/7 Operations</div>
+                    </ItemStyled>
+                    <ItemStyled>
+                        <ItemImageStyled src={`${basePath}/images/pig.png`}></ItemImageStyled>
+                        <div>Save money</div>
+                    </ItemStyled>
+                    <ItemStyled>
+                        <ItemImageStyled src={`${basePath}/images/home_culture.png`}></ItemImageStyled>
+                        <div>Share your home and culture</div>
+                    </ItemStyled>
+                </ItemListStyled>
             </AboutPageContainerStyled>
         </AboutPageStyled>
     )
