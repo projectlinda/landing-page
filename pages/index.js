@@ -37,11 +37,19 @@ const FooterStyled = styled.footer`
   }
 `
 
+const FooterLinkContainerStyled = styled.div`
+  display: flex;
+
+  & > * {
+    margin-left: ${spacing(1)};
+  }
+`
+
 export default function Home() {
   return (
     <ThemeProvider theme={theme}>
       <div>
-        <Head>          
+        <Head>
           <title>Carinderya</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <link rel="icon" href="/favicon.ico" />
@@ -58,9 +66,14 @@ export default function Home() {
 
         <FooterStyled>
           <span>Copyright © 2020 | Project Linda Inc. All Rights Reserved</span>
-          <Link href="/agreement">
+          <FooterLinkContainerStyled>
+            <Link href="/faq">
+              FAQs
+          </Link>
+            <Link href="/agreement">
               Terms and Conditions
-          </Link>  
+          </Link>
+          </FooterLinkContainerStyled>
         </FooterStyled>
       </div>
     </ThemeProvider>
