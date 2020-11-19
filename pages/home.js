@@ -65,11 +65,17 @@ const DescStyled = styled.div`
 `
 
 const GooglePlayStyled = styled.img`        
+    cursor: pointer;
     margin-top: ${spacing(5)}; 
 `
 
 
 export default function HomePage() {
+
+    const onNavigatePlaystore = () => {
+        window.open('https://play.google.com/store/apps/developer?id=Project+Linda', '_blank')
+    }
+
     return (
         <HomePageStyled id="home">
             <MokcupImageStyled src={`${basePath}/images/mockup.png`}></MokcupImageStyled>
@@ -77,7 +83,7 @@ export default function HomePage() {
                 <LogoStyled src={`${basePath}/images/logo.svg`}></LogoStyled>
                 <SloganStyled>Good Food Begins at Home</SloganStyled>
                 <DescStyled>Start your first online restaurant with us or browse through a wide selection food specialties from your neighborhood!</DescStyled>
-                <GooglePlayStyled src={`${basePath}/images/google-play.png`}></GooglePlayStyled>
+                <GooglePlayStyled onClick={() => onNavigatePlaystore()} src={`${basePath}/images/google-play.png`}></GooglePlayStyled>
             </LeftContent>            
         </HomePageStyled>
     )
